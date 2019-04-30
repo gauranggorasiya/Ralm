@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp10"
+        android:layout_marginBottom="@dimen/dp5"
+        android:background="@drawable/edittext_bg_color_radius"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <EditText
+            android:id="@+id/idEtSearch"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:padding="@dimen/dp10"
+            android:layout_weight="3"
+            android:textColor="@color/md_black_1000"
+            android:textColorHint="@color/md_blue_grey_700"
+            android:drawableLeft="@drawable/ic_search"
+            android:drawablePadding="@dimen/dp10"
+            android:drawableTint="@color/colorPrimary"
+            android:hint="@string/search"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:background="@android:color/transparent"
+            android:maxLength="64"
+            android:maxLines="1"
+            android:textSize="@dimen/sp18" />
+
+        <LinearLayout
+            android:id="@+id/idLlSearchClearButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="2"
+            android:visibility="gone"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/idTvClearSearch"
+                style="@style/action_bar_text"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/white_color_border_radius"
+                android:gravity="center"
+                android:padding="@dimen/dp5"
+                android:text="@string/clear"
+                android:textAllCaps="false"
+                android:textSize="@dimen/sp16" />
+
+            <TextView
+                android:id="@+id/idTvSearch"
+                style="@style/action_bar_text"
+                android:layout_width="0dp"
+                android:layout_marginLeft="@dimen/dp5"
+                android:layout_weight="1"
+                android:background="@drawable/white_color_border_radius"
+                android:gravity="center"
+                android:padding="@dimen/dp5"
+                android:text="@string/search"
+                android:textSize="@dimen/sp16" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+

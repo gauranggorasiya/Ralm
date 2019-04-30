@@ -1,0 +1,166 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="icon_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/icon_background_</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:padding">@dimen/dp10</item>
+    </style>
+
+    <style name="heading_text_style2">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="heading_icon_style">
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:textSize">@dimen/sp40</item>
+        <item name="android:gravity">center</item>
+        <!--<item name="android:fontFamily">@</item>-->
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="action_bar_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:paddingLeft">@dimen/card_margin</item>
+        <item name="android:paddingRight">@dimen/card_margin</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="card_view_child_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@color/md_white_1000</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="label_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:padding">@dimen/dp5</item>
+        <item name="android:textColor">@color/md_grey_600</item>
+    </style>
+
+    <style name="filter_label_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:padding">@dimen/dp10</item>
+        <item name="android:textColor">@color/md_grey_600</item>
+    </style>
+
+    <style name="full_edit_text_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">1dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:selectAllOnFocus">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:inputType">textCapSentences</item>
+        <item name="android:background">@drawable/edittext_bg_color_radius</item>
+        <item name="android:padding">@dimen/dp10</item>
+        <item name="android:maxLength">64</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textColorHint">@color/md_grey_600</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="double_button_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/button_pressed_selector_indicator</item>
+        <item name="android:padding">@dimen/dp5</item>
+        <item name="android:textColor">@color/button_selector_text_color</item>
+    </style>
+
+    <style name="single_button_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:background">@drawable/button_selector_press_primary</item>
+        <item name="android:padding">@dimen/dp10</item>
+        <item name="android:textColor">@color/button_selector_text_color_white</item>
+    </style>
+
+    <style name="heading_text">
+        <item name="android:layout_width">205dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <!--<item name="android:textSize">22sp</item>-->
+        <item name="android:textSize">18sp</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:textColor">@color/md_black_1000</item>
+    </style>
+
+    <style name="history_heading_text">
+        <item name="android:layout_width">240dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <!--<item name="android:textSize">22sp</item>-->
+        <item name="android:textSize">18sp</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:textColor">@color/md_black_1000</item>
+    </style>
+
+    <style name="heading_text_2">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/sp16</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:textColor">@color/md_black_1000</item>
+    </style>
+
+    <style name="card_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="CustomDialogTheme" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@color/trans_black</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <!--- Popup Menu Background Color -->
+    <style name="YOURSTYLE" parent="Widget.AppCompat.PopupMenu">
+        <item name="android:textColor">@color/md_black_1000</item>
+        <item name="android:dividerHeight">2px</item>
+        <item name="android:dialogCornerRadius">15dp</item>
+        <item name="android:itemBackground">@drawable/popup_border_radius</item>
+        <item name="android:textSize">@dimen/sp16</item>
+    </style>
+
+    <style name="spinnerItemStyle" parent="@android:style/Widget.Holo.DropDownItem.Spinner">
+        <item name="android:textColor">@color/md_black_1000</item>
+    </style>
+</resources>

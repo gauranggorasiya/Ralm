@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="fa_print">&#xf02f;</string>
+    <string name="fa_save">&#xf0c7;</string>
+    <string name="fa_add">&#xf055;</string>
+    <string name="fa_plus">&#xf067;</string>
+    <string name="fa_filter">&#xf0b0;</string>
+    <string name="fa_history">&#xf1da;</string>
+</resources>

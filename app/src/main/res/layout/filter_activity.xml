@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:orientation="vertical"
+    tools:context=".activity.AddCustomerActivity">
+    <include layout="@layout/action_bar" />
+
+    <android.support.v7.widget.CardView
+        app:cardCornerRadius="@dimen/dp5"
+        android:layout_margin="@dimen/dp10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="@dimen/dp5"
+            style="@style/card_view_child_style">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="@dimen/dp5"
+                android:layout_marginTop="@dimen/dp10">
+                <TextView
+                    style="@style/filter_label_style"
+                    android:text="@string/order_period" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/dp10">
+                <Spinner
+                    android:id="@+id/spinner1"
+                    style="@style/spinnerItemStyle"
+                    android:textColor="@color/md_black_1000"
+                    android:popupBackground="@color/md_white_1000"
+                    android:background="@drawable/edittext_bg_color_radius"
+                    android:drawableRight="@drawable/ic_arrow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="@dimen/dp5"
+                android:layout_marginTop="@dimen/dp10">
+                <TextView
+                    style="@style/filter_label_style"
+                    android:text="@string/date_from" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/dp10">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="@dimen/dp0"
+                    android:layout_marginRight="@dimen/dp5"
+                    android:layout_weight="1">
+
+
+                    <EditText
+                        android:id="@+id/idEtStartDate"
+                        style="@style/full_edit_text_style"
+                        android:drawablePadding="@dimen/dp5"
+                        android:drawableLeft="@drawable/ic_date_24dp"
+                        android:maxLength="10"
+                        android:inputType="date"
+                        android:text="@string/dummy_dates"
+                        android:hint="@string/start_date"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        style="@style/label_style"
+                        android:textSize="@dimen/sp16"
+                        android:text="@string/to" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="@dimen/dp5"
+                    android:layout_marginRight="@dimen/dp0"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/idEtEndDate"
+                        style="@style/full_edit_text_style"
+                        android:drawablePadding="@dimen/dp5"
+                        android:drawableLeft="@drawable/ic_date_24dp"
+                        android:maxLength="10"
+                        android:inputType="date"
+                        android:text="@string/dummy_dates"
+                        android:hint="@string/end_date"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="@dimen/dp5"
+                android:layout_marginTop="@dimen/dp10">
+                <TextView
+                    style="@style/filter_label_style"
+                    android:text="@string/amount_from" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/dp10">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="@dimen/dp0"
+                    android:layout_marginRight="@dimen/dp5"
+                    android:layout_weight="1">
+
+
+                    <EditText
+                        android:id="@+id/idEtStartAmount"
+                        style="@style/full_edit_text_style"
+                        android:drawablePadding="@dimen/dp5"
+                        android:drawableLeft="@drawable/img_rupee_circle_bg_grey"
+                        android:inputType="number"
+                        android:text="@string/dummy_price"
+                        android:hint="@string/start_amount"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/label_style"
+                        android:layout_height="match_parent"
+                        android:text="To"
+                        android:textSize="@dimen/sp16" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="@dimen/dp5"
+                    android:layout_marginRight="@dimen/dp0"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/idEtEndAmount"
+                        style="@style/full_edit_text_style"
+                        android:drawablePadding="@dimen/dp5"
+                        android:drawableLeft="@drawable/img_rupee_circle_bg_grey"
+                        android:inputType="number"
+                        android:text="@string/dummy_price"
+                        android:hint="@string/end_amount"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp30"
+                android:layout_marginBottom="@dimen/dp15"
+                android:weightSum="2"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginRight="@dimen/dp0"
+                    android:layout_weight="1">
+                    <Button
+                        android:id="@+id/idBtnReset"
+                        style="@style/double_button_style"
+                        android:text="@string/no_filter"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/filter_label_style"
+                        android:layout_height="match_parent"
+                        android:text="To"
+                        android:textColor="@color/md_white_1000"
+                        android:textSize="@dimen/sp16" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="@dimen/dp0"
+                    android:layout_marginRight="@dimen/dp0"
+                    android:layout_weight="1">
+                    <Button
+                        style="@style/double_button_style"
+                        android:id="@+id/idBtnSubmit"
+                        android:text="@string/filter_customer"
+                        android:layout_marginLeft="@dimen/dp0"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/idFtHistory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp0"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginRight="@dimen/dp10"
+            android:layout_marginBottom="@dimen/dp10"
+            android:clipToPadding="false"
+            android:scrollbars="vertical"
+            app:layoutManager="android.support.v7.widget.LinearLayoutManager"/>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

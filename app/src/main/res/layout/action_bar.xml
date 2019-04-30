@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp56dp"
+    android:background="@color/colorPrimary"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/idBack"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:padding="@dimen/dp15"
+        android:src="@drawable/ic_back"/>
+
+<!--    <ImageView
+        android:id="@+id/idHistory"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:padding="@dimen/dp15"
+        android:src="@drawable/ic_history_black_24dp"/>-->
+
+    <wait.list.manager.custom_view.TextViewFontAwesome
+        android:id="@+id/idHistory"
+        android:layout_height="@dimen/dp40"
+        android:layout_width="@dimen/dp40"
+        android:textSize="@dimen/sp24"
+        android:gravity="center"
+        android:layout_margin="@dimen/dp10"
+        android:visibility="gone"
+        android:layout_alignParentLeft="true"
+        android:textColor="@android:color/white"
+        android:layout_centerVertical="true"
+        android:background="@drawable/white_color_border_radius"
+        android:text="@string/fa_history" />
+
+    <TextView
+        android:id="@+id/idTvActionbarTitle"
+        style="@style/action_bar_text"
+        android:layout_centerInParent="true"
+        android:textColor="@android:color/white"
+        android:text="@string/app_name" />
+
+    <wait.list.manager.custom_view.TextViewFontAwesome
+        android:id="@+id/idTvFilter"
+        android:layout_height="@dimen/dp40"
+        android:layout_width="@dimen/dp40"
+        android:textSize="@dimen/sp24"
+        android:gravity="center"
+        android:layout_marginRight="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_marginBottom="@dimen/dp10"
+        android:visibility="gone"
+        android:layout_alignParentRight="true"
+        android:textColor="@android:color/white"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/idTvAddNew"
+        android:background="@drawable/white_color_border_radius"
+        android:text="@string/fa_filter" />
+
+    <wait.list.manager.custom_view.TextViewFontAwesome
+        android:id="@+id/idTvAddNew"
+        android:layout_height="@dimen/dp40"
+        android:layout_width="@dimen/dp40"
+        android:textSize="@dimen/sp24"
+        android:gravity="center"
+        android:layout_margin="@dimen/dp10"
+        android:visibility="gone"
+        android:layout_alignParentRight="true"
+        android:textColor="@android:color/white"
+        android:layout_centerVertical="true"
+        android:background="@drawable/white_color_border_radius"
+        android:text="@string/fa_plus" />
+<EditText
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:focusedByDefault="true"/>
+</RelativeLayout>
+
+
+
+

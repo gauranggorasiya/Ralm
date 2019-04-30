@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:orientation="vertical"
+    tools:context=".activity.AddCustomerActivity">
+    <include layout="@layout/action_bar" />
+
+    <android.support.v7.widget.CardView
+        app:cardCornerRadius="@dimen/dp5"
+        android:layout_margin="@dimen/dp10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="@dimen/dp5"
+            style="@style/card_view_child_style">
+            <LinearLayout
+                android:id="@+id/idLlFindEmiLayout"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/label_style"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:text="@string/customer_name"/>
+
+                <EditText
+                    android:id="@+id/idEtCustName"
+                    style="@style/full_edit_text_style"
+                    android:drawablePadding="@dimen/dp5"
+                    android:drawableLeft="@drawable/ic_man_grey"
+                    android:inputType="text"
+                    android:text="@string/dummy_name"
+                    android:hint="@string/customer_name"/>
+
+<!--      Address Field
+
+                <TextView
+                    style="@style/label_style"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:text="@string/address"/>
+                <EditText
+                    android:id="@+id/idEtAddress"
+                    style="@style/full_edit_text_style"
+                    android:drawablePadding="@dimen/dp5"
+                    android:drawableLeft="@drawable/ic_location_marker"
+                    android:maxLength="512"
+                    android:imeOptions="flagNavigateNext"
+                    android:gravity="left"
+                    android:text="@string/dummy_address"
+                    android:hint="@string/address"/>-->
+                <TextView
+                    style="@style/label_style"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:text="@string/number_of_person"/>
+                <EditText
+                    android:id="@+id/idEtNumber"
+                    style="@style/full_edit_text_style"
+                    android:drawablePadding="@dimen/dp5"
+                    android:drawableLeft="@drawable/ic_gst"
+                    android:inputType="number"
+                    android:maxLength="30"
+                    android:text="@string/dummy_numberofperson"
+                    android:hint="@string/number_of_person"/>
+
+<!--    Email Field
+                <TextView
+                    style="@style/label_style"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:text="@string/email_address"/>
+                <EditText
+                    android:id="@+id/idEtEmail"
+                    style="@style/full_edit_text_style"
+                    android:inputType="textEmailAddress"
+                    android:drawablePadding="@dimen/dp5"
+                    android:drawableLeft="@drawable/ic_email"
+                    android:maxLength="128"
+                    android:text="@string/dummy_email"
+                    android:hint="@string/email_address"/>-->
+                <TextView
+                    style="@style/label_style"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:text="@string/phone_number"/>
+                <EditText
+                    android:id="@+id/idEtMobile"
+                    style="@style/full_edit_text_style"
+                    android:inputType="number"
+                    android:text="@string/dummy_mobile"
+                    android:drawablePadding="@dimen/dp5"
+                    android:drawableLeft="@drawable/ic_phone"
+                    android:maxLength="12"
+                    android:hint="@string/phone_number"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp15"
+                android:weightSum="2"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/idBtnReset"
+                    style="@style/double_button_style"
+                    android:text="@string/reset"/>
+                <Button
+                    style="@style/double_button_style"
+                    android:id="@+id/idBtnSubmit"
+                    android:text="@string/save_customer"
+                    android:layout_marginLeft="@dimen/dp10"/>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

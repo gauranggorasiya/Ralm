@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/idDialogParent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="@dimen/dp20"
+    android:background="@drawable/pop_up_white_bg_radius"
+    android:orientation="vertical">
+
+<!-- <TextView
+        android:id="@+id/idTvTitleMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp20"
+        android:gravity="center_horizontal"
+        android:text="@string/please_enter_table_number"
+        android:textColor="@color/md_black_1000"
+        android:textSize="@dimen/h5" />-->
+
+    <EditText
+        android:id="@+id/idEtAllocate"
+        style="@style/full_edit_text_style"
+        android:layout_margin="@dimen/dp20"
+        android:inputType="number"
+        android:hint="@string/please_enter_table_number"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/h5"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/md_grey_400" />
+
+
+<!--    <TextView
+        android:id="@+id/idBtnTableAllocate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:background="@drawable/btn_bg_white_bottom_both_radius"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/dp15"
+        android:text="@string/ok"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/h4" />-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <TextView
+            android:id="@+id/idBtnOk"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:background="@drawable/btn_bg_white_bottom_left_radius"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/dp15"
+            android:text="@string/ok"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/h4" />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/md_grey_400" />
+        <TextView
+            android:id="@+id/idBtnCancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:background="@drawable/btn_bg_white_bottom_right_radius"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/dp15"
+            android:text="@string/cancel"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/h4" />
+    </LinearLayout>
+
+
+</LinearLayout>

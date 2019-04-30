@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorBackground"
+    tools:context=".activity.HistoryActivity">
+    <include layout="@layout/action_bar" />
+    <include layout="@layout/search_bar"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/idRvHistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp0"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp10"
+        android:layout_marginBottom="@dimen/dp10"
+        android:clipToPadding="false"
+        android:scrollbars="vertical"
+        app:layoutManager="android.support.v7.widget.LinearLayoutManager"/>
+    <TextView
+        android:id="@+id/idTvNoDataFound"
+        android:visibility="gone"
+        style="@style/action_bar_text"
+        android:background="@drawable/white_color_border_radius"
+        android:padding="@dimen/dp10"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_margin="@dimen/dp10"
+        android:text="@string/no_customer_available"
+        android:textSize="@dimen/sp18" />
+
+</LinearLayout>

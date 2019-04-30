@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/idCvCustomerItem"
+    style="@style/card_style"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    app:cardCornerRadius="@dimen/dp5">
+
+    <LinearLayout
+        style="@style/card_view_child_style"
+        android:padding="@dimen/dp10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/idTvCustomerName"
+                style="@style/heading_text"
+                android:drawableLeft="@drawable/ic_group"
+                android:drawablePadding="@dimen/dp5"
+                android:text="@string/dummy_name" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:orientation="horizontal">
+                <!--<ImageView
+                    android:id="@+id/idIvEditCustomer"
+                    style="@style/icon_style"
+                    android:src="@drawable/ic_edit" />-->
+                <ImageView
+                    android:id="@+id/idIvContextMenu"
+                    style="@style/icon_style"
+                    android:src="@drawable/ic_more_vert_black_24dp" />
+
+                <TextView
+                    android:id="@+id/idTvNumberOfPerson"
+                    style="@style/heading_text_2"
+                    android:background="@drawable/icon_background_red"
+                    android:gravity="center"
+                    android:text="11"
+                    android:textColor="@color/md_white_1000"
+                    android:textSize="@dimen/sp20" />
+            </LinearLayout>
+        </LinearLayout>
+
+    <!-- <TextView
+         android:id="@+id/idTvDate"
+         style="@style/heading_text_2"
+         android:drawableLeft="@drawable/ic_date"
+         android:drawablePadding="@dimen/dp5"
+         android:text="@string/dummy_date" />-->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp10"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/idTvCustomerPhone"
+                style="@style/icon_style"
+                android:src="@drawable/ic_call" />
+
+            <ImageView
+                android:id="@+id/idIVMessageCustomer"
+                style="@style/icon_style"
+                android:src="@drawable/ic_message" />
+
+            <ImageView
+                android:id="@+id/idIVWhatsAppCustomer"
+                style="@style/icon_style"
+                android:src="@drawable/ic_whatsapp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:orientation="horizontal">
+            <TextView
+                android:textSize="@dimen/dp20"
+                android:textColor="#000"
+                android:id="@+id/status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textSize="@dimen/dp20"
+                android:textColor="#000"
+                android:id="@+id/tableno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/idBtnStatusChange"
+                style="@style/single_button_style"
+                android:visibility="visible"
+                android:layout_width="wrap_content"
+                android:text="@string/allocate_table" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
